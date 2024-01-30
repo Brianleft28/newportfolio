@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: monospace;
-  background-color: rgb(37, 0, 17);
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   box-sizing: border-box;
 }
