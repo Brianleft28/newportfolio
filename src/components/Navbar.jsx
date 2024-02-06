@@ -36,7 +36,8 @@ export const NavBar = () => {
       <Navbar expand='lg'>
         <Container>
           <Navbar.Brand href='#home' className='logo'>
-            <img src={logo} alt='Logo' />
+            {/* <img src={logo} alt='Logo' /> */}
+            BRIANDEV
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav'>
             <span className='navbar-toggler-icon'></span>
