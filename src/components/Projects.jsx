@@ -1,7 +1,18 @@
-import { Col, Row, Container } from 'react-bootstrap'
+import {
+  Col,
+  Row,
+  Container,
+  Tab,
+  TabContainer,
+  TabPane,
+  TabContent,
+  Nav
+} from 'react-bootstrap'
 import { ProjectCard } from './ProjectCard'
 import colorSharp2 from '../assets/img/color-sharp2.png'
-import projImg1 
+import projImg1 from '../assets/img/project-img1.png'
+import projImg2 from '../assets/img/project-img2.png'
+import projImg3 from '../assets/img/project-img3.png'
 
 export const Projects = () => {
   const projects = [
@@ -38,12 +49,12 @@ export const Projects = () => {
   ]
 
   return (
-    <section className='project' id='project'>
+    <section className='project'>
       <Container>
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>
+            <p id='projects'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
               officiis consequatur architecto quidem dolorum voluptates quo,
               unde perspiciatis quod, vero repudiandae voluptate quibusdam
@@ -54,7 +65,10 @@ export const Projects = () => {
             </p>
 
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
-              <Nav variant='pills' defaultActiveKey='/home'>
+              <Nav
+                variant='pills'
+                className='nav-pills mb-5 justify-content-center align-items-center'
+                id='pills-tab'>
                 <Nav.Item>
                   <Nav.Link eventKey='first'>Tab One</Nav.Link>
                 </Nav.Item>

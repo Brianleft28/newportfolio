@@ -62,10 +62,14 @@ export const Banner = () => {
               </span>
             </h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eos
-              perspiciatis et ipsam, labore, tenetur error magni quasi omnis
-              distinctio amet nihil nulla quibusdam tempora. Repellendus eveniet
-              soluta reprehenderit cum?
+              ¡Hola! Soy Brian, un apasionado desarrollador web con una sólida
+              experiencia en la creación de experiencias digitales cautivadoras.
+              Mi enfoque se centra en fusionar diseño creativo con funcionalidad
+              robusta para construir sitios web que no solo son visualmente
+              atractivos, sino también altamente efectivos. Con habilidades en
+              las últimas tecnologías web, desde HTML5, CSS3 hasta JavaScript y
+              frameworks modernos como React y Vue.js, estoy preparado para
+              llevar tus ideas al mundo digital.
             </p>
             <button onClick={() => console.log('connect')}>
               Let's connect <ArrowRightCircle size={25} />
