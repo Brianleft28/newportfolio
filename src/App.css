@@ -20,6 +20,7 @@
 
 /* Default Css */
 
+/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -66,10 +67,11 @@ a:hover {
   text-decoration: none;
 }
 
-button {
-  border: 0;
-  background-color: transparent;
+img {
+  width: 100%;
+  height: auto;
 }
+
 button {
   border: 0;
   background-color: transparent;
@@ -88,8 +90,9 @@ select:focus {
   }
 }
 
-p.success {
-  color: green;
+p.sucess {
+  color: rgb(65, 185, 65);
+  font-size: 18px;
 }
 
 p.danger {
@@ -514,7 +517,7 @@ nav.navbar div.container .navbar-brand {
   z-index: -4;
 }
 
-/* CONTACT CSS */
+/* CONTACT CSS   */
 
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
