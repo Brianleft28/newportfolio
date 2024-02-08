@@ -73,18 +73,21 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
               <div className='social-icon'>
-                <a href='#'>
-                  <img src={navIcon1} alt='' />
+                <a
+                  target='_blank'
+                  href='https://www.linkedin.com/in/brian-benegas-44770729b/'>
+                  <img src={navIcon1} alt='Linkedin Logo' />
                 </a>
-                <a href='#'>
-                  <img src={navIcon2} alt='' />
+                <a
+                  target='_blank'
+                  href='https://www.instagram.com/briaan.benegas/'>
+                  <img src={navIcon2} alt='Instagram Logo' />
                 </a>
-                <a href='#'>
-                  <img src={navIcon3} alt='' />
+                <a target='_blank' href='facebook.com'>
+                  <img src={navIcon3} alt='Facebook Logo' />
                 </a>
               </div>
-              <button className='vvd' onClick={() => console.log('connect')}>
-                {' '}
+              <button className='vvd'>
                 <span>Let's Connect</span>
               </button>
             </span>

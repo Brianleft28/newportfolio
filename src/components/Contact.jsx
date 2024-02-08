@@ -50,11 +50,15 @@ export const Contact = () => {
       }
     } catch (error) {
       // Handle any errors that occur during the fetch and parsing of JSON
-      console.error('Error during fetch:', error)
+      console.log('Valor de status antes de actualizar:', status)
       setStatus({
         success: false,
         message: 'An error occurred. Please try again later.'
       })
+      setButtonText('Send')
+      buttonText.className = 'send'
+      console.log('Valor de status despues de actualizar:', status)
+      console.error('Error during fetch:', error)
     }
   }
 
@@ -110,18 +114,22 @@ export const Contact = () => {
                     onChange={(e) =>
                       onFormUpdate('message', e.target.value)
                     }></textarea>
-                  <button type='submit'>
-                    <span>{buttonText}</span>
-                  </button>
                 </Col>
                 {status.message && (
-                  <Col>
+                  <Col sm={12} className='text-center'>
                     <p
-                      className={status.sucess === false ? 'danger' : 'sucess'}>
+                      className={
+                        status.success === false ? 'danger' : 'sucess'
+                      }>
                       {status.message}
                     </p>
                   </Col>
                 )}
+                <button
+                  type='submit'
+                  className={buttonText === 'Send' ? 'send' : 'success'}>
+                  <span>{buttonText}</span>
+                </button>
               </Row>
             </form>
           </Col>

@@ -7,8 +7,6 @@ import nodemailer from 'nodemailer'
 
 const router = express.Router()
 
-// Resto del código...
-
 // server used to send send emails
 const app = express()
 app.use(cors())

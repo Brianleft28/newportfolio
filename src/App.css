@@ -217,6 +217,7 @@ nav.navbar .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
+
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
@@ -261,7 +262,13 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 nav.navbar div.container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+nav.navbar div.container div.show {
+  display: flex;
+  align-items: center;
+  background: #0000003b;
+  justify-content: space-between;
 }
 
 nav.navbar div.container .navbar-brand {
@@ -527,9 +534,9 @@ nav.navbar div.container .navbar-brand {
   width: 92%;
 }
 .contact h2 {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .contact form input,
 .contact form textarea {
@@ -563,7 +570,9 @@ nav.navbar div.container .navbar-brand {
 }
 .contact form button {
   font-weight: 700;
+  margin: 0 auto;
   color: #000;
+  max-width: 385px;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
@@ -595,13 +604,7 @@ nav.navbar div.container .navbar-brand {
 }
 
 /************ Footer Css ************/
-.footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .newsletter-bx {
   background: #ffffff;
   border-radius: 55px;
@@ -670,5 +673,30 @@ nav.navbar div.container .navbar-brand {
   font-size: 14px;
   color: #b8b8b8;
   letter-spacing: 0.5px;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer.footer .col {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%;
+}
+
+.footer .container .col h3 {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.footer .cointaner {
+  text-align: center;
 }

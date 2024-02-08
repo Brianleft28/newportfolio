@@ -54,15 +54,7 @@ export const Projects = () => {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p id='projects'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-              officiis consequatur architecto quidem dolorum voluptates quo,
-              unde perspiciatis quod, vero repudiandae voluptate quibusdam
-              tempore? Est corporis dolore modi autem error. Aperiam fuga
-              ratione officiis sapiente eveniet facilis molestiae reiciendis
-              iure odio reprehenderit, ipsam ipsum modi doloremque a iusto!
-              Culpa ad velit fuga non atque! Vitae ipsa illo quae nulla vero?
-            </p>
+            <p id='projects'>...</p>
 
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
               <Nav

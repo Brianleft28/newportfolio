@@ -34,30 +34,39 @@ export const Skills = () => {
             <div className='skill-bx'>
               <h2>Skills</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate architecto cum praesentium aut non ex vel, tempore,
-                minus libero suscipit fugit sit ipsum iusto quisquam soluta
-                voluptatem! Consectetur, corrupti perspiciatis.
+                In the realm of web development, I navigate the intricate
+                landscape with proficiency in the MERN stack – a dynamic quartet
+                comprising MongoDB, Express.js, React, and Node.js. This
+                ensemble of technologies forms the backbone of my skill set,
+                empowering me to craft robust and responsive applications. From
+                shaping data structures in MongoDB to creating seamless user
+                interfaces with React, my expertise spans the entire development
+                cycle. With a keen eye for detail and a passion for innovation,
+                I transform ideas into interactive and scalable web solutions.
+                Explore the synergy of MongoDB's NoSQL capabilities,
+                Express.js's streamlined web application development, React's
+                declarative approach to UI, and Node.js's server-side prowess as
+                we embark on the journey of crafting digital experiences.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className='skill-slider'>
                 <div className='item'>
-                  <img src={meter1} alt='' />
-                  <h5>Web Development</h5>
+                  <img src={meter1} alt='Mongo Meter' />
+                  <h5>Mongo DB</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter2} alt='' />
-                  <h5>Brand Identity</h5>
+                  <img src={meter2} alt='Express Meter' />
+                  <h5>Express</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter3} alt='' />
-                  <h5>Logo Design</h5>
+                  <img src={meter3} alt='Node Metter' />
+                  <h5>Node</h5>
                 </div>
                 <div className='item'>
-                  <img src={meter1} alt='' />
-                  <h5>Web Development</h5>
+                  <img src={meter1} alt='React Metter' />
+                  <h5>React</h5>
                 </div>
               </Carousel>
             </div>
