@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { useState, useEffect } from 'react'
 import logo from '../assets/img/logo.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon2 from '../assets/img/nav-icon2.svg'
+import navIcon2 from '../assets/img/social-icon-1.png'
 import navIcon3 from '../assets/img/nav-icon3.svg'
 
 export const NavBar = () => {
@@ -71,6 +71,7 @@ export const NavBar = () => {
                 Projects
               </Nav.Link>
             </Nav>
+
             <span className='navbar-text'>
               <div className='social-icon'>
                 <a
@@ -80,16 +81,21 @@ export const NavBar = () => {
                 </a>
                 <a
                   target='_blank'
-                  href='https://www.instagram.com/briaan.benegas/'>
-                  <img src={navIcon2} alt='Instagram Logo' />
+                  className='github'
+                  href='https://github.com/Brianleft28'>
+                  <img src={navIcon2} alt='Github Logo' />
                 </a>
-                <a target='_blank' href='facebook.com'>
-                  <img src={navIcon3} alt='Facebook Logo' />
+                <a
+                  target='_blank'
+                  href='https://www.instagram.com/briaan.benegas/'>
+                  <img src={navIcon3} alt='Instagram Logo' />
                 </a>
               </div>
-              <button className='vvd'>
-                <span>Let's Connect</span>
-              </button>
+              <a target='_blank' href='https://wa.link/6s2go2'>
+                <button className='vvd'>
+                  <span>Let's Connect</span>
+                </button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>

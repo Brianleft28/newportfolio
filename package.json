@@ -36,5 +36,17 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "prettier": "^3.2.4",
     "vite": "^5.0.8"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brianleft28/newportfolio.git"
+  },
+  "author": "Brianleft28",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brianleft28/newportfolio/issues"
+  },
+  "homepage": "https://github.com/Brianleft28/newportfolio#readme"
 }

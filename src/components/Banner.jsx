@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 import headerImg from '../assets/img/header-img.svg'
-import { TrackVisibility } from 'react-on-screen'
-import 'animate.css'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -50,39 +48,32 @@ export const Banner = () => {
     <section className='banner'>
       <Container>
         <Row className='align-items-center'>
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? 'animated__animate animated__fadeIn' : ''
-                  }>
-                  <span className='tagline' id='home'>
-                    Welcome to my Portfolio
-                  </span>
-                  <h1>
-                    {`Hi! I'm Brian`}{' '}
-                    <span className='txt-rotate'>
-                      <span className='wrap'>{text}</span>
-                    </span>
-                  </h1>
-                  <p>
-                    ¡Hola! Soy Brian, un apasionado desarrollador web con una
-                    sólida experiencia en la creación de experiencias digitales
-                    cautivadoras. Mi enfoque se centra en fusionar diseño
-                    creativo con funcionalidad robusta para construir sitios web
-                    que no solo son visualmente atractivos, sino también
-                    altamente efectivos. Con habilidades en las últimas
-                    tecnologías web, desde HTML5, CSS3 hasta JavaScript y
-                    frameworks modernos como React y Vue.js, estoy preparado
-                    para llevar tus ideas al mundo digital.
-                  </p>
-                  <button onClick={() => console.log('connect')}>
-                    Let's connect <ArrowRightCircle size={25} />
-                  </button>
-                </div>
-              )}
-            </TrackVisibility>
+          <Col xs={12} md={6} xl={7} className='text-center'>
+            <span className='tagline' id='home'>
+              Welcome to my Portfolio
+            </span>
+            <h1>{`Hi! I'm Brian`} </h1>
+            <h2>
+              <span className='txt-rotate'>
+                <span className='wrap'>{text}</span>
+              </span>
+            </h2>
+            <p>
+              Currently, I'm diving deep into the fascinating realm of the MERN
+              (MongoDB, Express.js, React, Node.js) stack, expanding my
+              knowledge and sharpening my development skills. <br /> <br />
+              And if you're thinking, "Hey, this person seems like someone I'd
+              love to work with!" – well, you're absolutely right! I'm not just
+              coding; I'm crafting digital wonders. So, whether you have an
+              exciting project, a challenging problem, or just want to discuss
+              the latest tech trends over coffee, feel free to reach out! Let's
+              turn ideas into reality and have some coding adventures together.
+            </p>
+            <a href='#email' className='btn-email'>
+              <button className='mx-auto'>
+                Send me an Email! <ArrowRightCircle size={25} />
+              </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt='Header Img' />

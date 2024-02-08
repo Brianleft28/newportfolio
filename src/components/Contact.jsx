@@ -65,7 +65,7 @@ export const Contact = () => {
   /* Renderizado */
   return (
     <section className='contact' id='connect'>
-      <Container>
+      <Container id='email'>
         <Row className='align-items-center'>
           <Col md={6}>
             <img src={contactImg} alt='Contact us' />
