@@ -91,7 +91,7 @@ export const NavBar = () => {
                   <img src={navIcon3} alt='Instagram Logo' />
                 </a>
               </div>
-              <a target='_blank' href='https://wa.link/6s2go2'>
+              <a href='#email'>
                 <button className='vvd'>
                   <span>Let's Connect</span>
                 </button>

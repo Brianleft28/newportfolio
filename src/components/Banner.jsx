@@ -69,9 +69,12 @@ export const Banner = () => {
               the latest tech trends over coffee, feel free to reach out! Let's
               turn ideas into reality and have some coding adventures together.
             </p>
-            <a href='#email' className='btn-email'>
-              <button className='mx-auto'>
-                Send me an Email! <ArrowRightCircle size={25} />
+            <a
+              target='_blank'
+              href='https://wa.link/6s2go2'
+              className='btn-email'>
+              <button tar className='mx-auto'>
+                Let's Talk! <ArrowRightCircle size={25} />
               </button>
             </a>
           </Col>
