@@ -1,6 +1,9 @@
 import dotenv from 'dotenv'
 dotenv.config()
+const cors = require('cors');
+const express = require('express');
 
+app.use(cors());
 import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
